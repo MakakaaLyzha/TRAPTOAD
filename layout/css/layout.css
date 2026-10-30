@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #000;
+}
+
+.page {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section, footer {
+    position: relative;
+    flex: none;
+    overflow: hidden;
+    width: 1440px;
+}
+
+.art {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.text {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-family: 'Styrene A Web', sans-serif;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+}
+
+a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+}
+
+.words {
+    position: absolute;
+    inset: 22px 0 auto;
+    display: flex;
+    gap: 0;
+    color: #08180e;
+    font-family: 'Styrene A Web', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 52.5px;
+    white-space: nowrap;
+}
+
+.words span {
+    position: absolute;
+}
+
+.words span:nth-child(1) {
+    left: 10px;
+}
+
+.words span:nth-child(2) {
+    left: 526px;
+}
+
+.words span:nth-child(3) {
+    left: 996px;
+}
+
+.audio {
+    position: absolute;
+    left: 0;
+    top: 135px;
+    display: block;
+    width: 395px;
+    height: 54px;
+    margin: 0;
+    padding: 0;
+    color-scheme: dark;
+    border: 1px solid #a6ff00;
+    border-radius: 27px;
+    background: #08180e;
+}
+
+.work-link {
+    position: absolute;
+    left: 653px;
+    top: 526px;
+    width: 782px;
+    height: 244px;
+}
+

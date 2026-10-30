@@ -1,177 +1,182 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    
-    <title>TRAPTOAD — студия звукозаписи</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-    <header>
-        <div class="brand">TRAPTOAD</div>
-        <nav>
-            <span>Звук</span>
-            <span>Студия</span>
-            <span>Контакты</span>
-        </nav>
-    </header>
-
-
-
-
-    <main>
-        <section class="hero">
-            <div class="line">
-                <span>СТУДИЯ ЗВУКОЗАПИСИ ДЛЯ ЛЯГУШЕК</span>
-                <span>● REC / ВКЛЮЧАЙ СВОЁ</span>
-            </div>
-
-            <div class="disc"></div>
-
-            <h1>TRAP<br><span>TOAD</span></h1>
-
-            <p>ТВОЙ ГОЛОС.<br>ТВОЯ ЧАСТОТА.</p>
-        </section>
-
-        <div class="strip">
-            СВОЙ ЗВУК ✳ СВОЙ РИТМ ✳ СВОЯ СРЕДА
+  <head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+    <meta name = "description" content="TRAPTOAD — студия звукозаписи для лягушек. Styrene A Web.">
+    <title>TRAPTOAD / Styrene A Web</title>
+    <link rel="stylesheet" href="layout/css/reset.css">
+    <link rel="stylesheet" href="layout/css/fonts.css">
+    <link rel="stylesheet" href="layout/css/layout.css">
+    <link rel="stylesheet" href="layout/css/style.css">
+  </head>
+  <body>
+    <main class="page">
+      <section class="first" id="top">
+        <img class="art" src="img/first.svg" alt="" aria-hidden="true">
+        <a class="text studio-name" href="#top">TRAPTOAD</a>
+        <a class="text listen" href="#sound">Слушать</a>
+        <p class="text studio-info">СТУДИЯ ЗВУКОЗАПИСИ ДЛЯ ЛЯГУШЕК</p>
+        <p class="text rec">● REC / ВКЛЮЧАЙ СВОЁ</p>
+        <h1 class="text title1">TRAP</h1>
+        <p class="text title2">TOAD</p>
+        <a class="text font-link" href="#font">Styrene A Web</a>
+        <p class="text voice">ТВОЙ ГОЛОС.<br>ТВОЯ ЧАСТОТА.</p>
+        <p class="text intro">Styrene A Web — это современный геометрический гротеск,<br>созданный в 2016 году дизайнерами<br>Бёртоном Хасибом и Ильёй Рудерманом</p>
+      </section>
+      <section class="strip" id="strip">
+        <img class="art" src="img/strip.svg" alt="" aria-hidden="true">
+        <div class="words"><span>СВОЯ ФОРМА</span><span>СВОЙ РИТМ</span><span>СВОИ ДЕТАЛИ</span></div>
+      </section>
+      <section class="about" id="about">
+        <img class="art" src="img/about.svg" alt="" aria-hidden="true">
+        <p class="text about-number">01 / МЕСТО ДЛЯ КОНЦЕПЦИИ</p>
+        <h2 class="text less">МЕНЬШЕ</h2>
+        <p class="text noise">ШУМА.</p>
+        <p class="text about-right">Расширенные детали и<br>необычные пропорции делают<br>строку узнаваемой. Styrene A<br>привлекает внимание даже без<br>дополнительных эффектов</p>
+        <p class="text about-left">Styrene A —геометрия<br>объединяет строгий хай-тек и<br>ритм. В концепции студии<br>звукозаписи для лягушек этот<br>шрифт решает : он превращает<br>традиционное «ква-ква» в<br>аудиоискусство.</p>
+        <p class="text more">БОЛЬШЕ<br>СТИЛЯ.</p>
+      </section>
+      <section class="sound" id="sound">
+        <input class="choice c1" type="radio" name="album" id="album1" aria-label="ACID POND" checked>
+        <input class="choice c2" type="radio" name="album" id="album2" aria-label="HOT TAKE">
+        <input class="choice c3" type="radio" name="album" id="album3" aria-label="LOW END">
+        <input class="choice c4" type="radio" name="album" id="album4" aria-label="AFTER HOURS">
+        <input class="choice c5" type="radio" name="album" id="album5" aria-label="NO SIGNAL">
+        <label class="album album1" for="album1">
+          <img src="img/album1.svg" alt="">
+          <span class="text black-name">BLACK / TRAPTOAD</span>
+        </label>
+        <label class="album album2" for="album2">
+          <img src="img/album2.svg" alt="">
+          <span class="text italic-name">ITALIC / TRAPTOAD</span>
+        </label>
+        <label class="album album3" for="album3">
+          <img src="img/album3.svg" alt="">
+          <span class="text regular-name">REGULAR / TRAPTOAD</span>
+        </label>
+        <label class="album album4" for="album4">
+          <img src="img/album4.svg" alt="">
+          <span class="text medium-name">MEDIUM / TRAPTOAD</span>
+        </label>
+        <label class="album album5" for="album5">
+          <img src="img/album5.svg" alt="">
+          <span class="text bold-name">BOLD / TRAPTOAD</span>
+        </label>
+        <div class="players">
+          <div class="player p1">
+            <p class="text track-number">01 / 05</p>
+            <h3 class="text track-title">ACID POND</h3>
+            <p class="text track-info">ACID / 110 BPM</p>
+            <audio class="audio a1" controls preload="none" aria-label="ACID POND">
+              <source src="audio/a1.wav" type="audio/wav">
+              <a href="audio/a1.wav">Скачать ACID POND</a>
+            </audio>
+          </div>
+          <div class="player p2">
+            <p class="text track-number">02 / 05</p>
+            <h3 class="text track-title">HOT TAKE</h3>
+            <p class="text track-info">TRAP / 140 BPM</p>
+            <audio class="audio a2" controls preload="none" aria-label="HOT TAKE">
+              <source src="audio/a2.wav" type="audio/wav">
+              <a href="audio/a2.wav">Скачать HOT TAKE</a>
+            </audio>
+          </div>
+          <div class="player p3">
+            <p class="text track-number">03 / 05</p>
+            <h3 class="text track-title">LOW END</h3>
+            <p class="text track-info">BASS / 90 BPM</p>
+            <audio class="audio a3" controls preload="none" aria-label="LOW END">
+              <source src="audio/a3.wav" type="audio/wav">
+              <a href="audio/a3.wav">Скачать LOW END</a>
+            </audio>
+          </div>
+          <div class="player p4">
+            <p class="text track-number">04 / 05</p>
+            <h3 class="text track-title">AFTER HOURS</h3>
+            <p class="text track-info">HOUSE / 120 BPM</p>
+            <audio class="audio a4" controls preload="none" aria-label="AFTER HOURS">
+              <source src="audio/a4.wav" type="audio/wav">
+              <a href="audio/a4.wav">Скачать AFTER HOURS</a>
+            </audio>
+          </div>
+          <div class="player p5">
+            <p class="text track-number">05 / 05</p>
+            <h3 class="text track-title">NO SIGNAL</h3>
+            <p class="text track-info">ELECTRO / 128 BPM</p>
+            <audio class="audio a5" controls preload="none" aria-label="NO SIGNAL">
+              <source src="audio/a5.wav" type="audio/wav">
+              <a href="audio/a5.wav">Скачать NO SIGNAL</a>
+            </audio>
+          </div>
         </div>
-
-        <section class="studio">
-            <div class="line">01 / МЕСТО ДЛЯ ТВОЕГО ЗВУКА</div>
-
-            <div class="statement">
-                <h2>МЕНЬШЕ ШУМА.<br>БОЛЬШЕ ТЕБЯ.</h2>
-
-                <p>
-                    Приходи с идеей — найдём её звучание.
-                    Запишем голос, соберём детали и оставим
-                    в треке то, что делает его твоим.
-                </p>
-            </div>
-        </section>
-
-        <section class="poster">
-            <div class="steps"></div>
-            <div class="dark-steps"></div>
-
-            <div class="line">
-                <span>TRAPTOAD / БЕЗ ТИХОГО РЕЖИМА</span>
-                <span>СВОЙ ЗВУК — НЕ ПОВОД ИЗВИНЯТЬСЯ</span>
-            </div>
-
-            <div class="tags">
-                <span class="tag bass">БАС</span>
-                <span class="tag voice">ГОЛОС</span>
-                <span class="tag character">ХАРАКТЕР</span>
-                <span class="tag filter">БЕЗ ФИЛЬТРА</span>
-            </div>
-
-            <h2>
-                <span>С КАКИХ ПОР</span>
-                <span>СВОЙ ЗВУК</span>
-                <span>СТАЛ</span>
-                <span class="last">СЛИШКОМ?</span>
-            </h2>
-
-            <p class="poster-note">
-                Не делай себя тише.<br>
-                Сделай трек точнее.
-            </p>
-        </section>
-
-        <section class="services">
-            <div class="line">
-                <span>03 / СОБЕРЁМ ТВОЙ ТРЕК</span>
-                <span>ОТ ПЕРВОГО ДУБЛЯ ДО РЕЛИЗА</span>
-            </div>
-
-            <div class="cards">
-                <article class="card recording">
-                    <div class="card-top">
-                        <span>01 / MIC</span>
-                        <span>TRAPTOAD STUDIO</span>
-                    </div>
-
-                    <h3>ЗАПИСЬ</h3>
-
-                    <div class="mic">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </div>
-
-                    <p>Голос. Подача. Характер.</p>
-                </article>
-
-                <article class="card mixing">
-                    <div class="card-top">
-                        <span>02 / TAPE</span>
-                        <span>TRAPTOAD STUDIO</span>
-                    </div>
-
-                    <h3>СВЕДЕНИЕ</h3>
-
-                    <div class="tape">
-                        <i></i>
-                    </div>
-
-                    <p>Все дорожки — один трек.</p>
-                </article>
-
-                <article class="card mastering">
-                    <div class="card-top">
-                        <span>03 / VINYL</span>
-                        <span>TRAPTOAD STUDIO</span>
-                    </div>
-
-                    <h3>МАСТЕРИНГ</h3>
-
-                    <div class="vinyl">
-                        <div>
-                            <i></i>
-                        </div>
-                    </div>
-
-                    <p>Финальный штрих перед релизом.</p>
-                </article>
-
-                <article class="card beats">
-                    <div class="card-top">
-                        <span>04 / BEAT</span>
-                        <span>TRAPTOAD STUDIO</span>
-                    </div>
-
-                    <h3>БИТЫ</h3>
-
-                    <div class="equalizer">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </div>
-
-                    <p>Ритм под твою историю.</p>
-                </article>
-            </div>
-        </section>
-
-        <section class="contact">
-            <div class="line">04 / ТЕПЕРЬ ТВОЯ ОЧЕРЕДЬ</div>
-
-            <h2>ДАВАЙ<br>ЗАПИШЕМ.</h2>
-
-            <p>Из болота — в наушники.</p>
-            <p>Запись · Сведение · Мастеринг · Биты</p>
-        </section>
+        <img class="art" src="img/sound.svg" alt="" aria-hidden="true">
+        <p class="text sound-number">02 / НАЧЕРТАНИЯ</p>
+        <h2 class="text sound-title">ПОСТАВЬ ТРЕК НА<br>ПОЛНУЮ.</h2>
+        <p class="text sound-info">Демообложки и звуковые фрагменты.<br>Здесь будут релизы студии.</p>
+      </section>
+      <section class="font" id="font">
+        <img class="art" src="img/font.svg" alt="" aria-hidden="true">
+        <p class="text font-note">TRAPTOAD / БЕЗ ТИХОГО РЕЖИМА</p>
+        <p class="text font-number">03/УНИКАЛЬНОСТЬ ШРИФТА</p>
+        <p class="text font-info">ШРИФТОВЫЕ ОСОБЕННОСТИ— НЕ ПОВОД ИЗВИНЯТЬСЯ</p>
+        <p class="text bold">BOLD</p>
+        <p class="text bold-italic">Bold Italic</p>
+        <p class="text medium-italic">Medium Italic</p>
+        <p class="text light-italic">Light Italic</p>
+        <h2 class="text font-title1">С КАКИХ ПОР</h2>
+        <p class="text font-title2">Styrene A Web</p>
+        <p class="text font-title3">СТАЛ</p>
+        <p class="text font-title4">СЛИШКОМ?</p>
+        <p class="text font-line1">Не делай себя тише.</p>
+        <p class="text font-line2">Сделай трек точнее.</p>
+        <a class="text check" href="#services">ДАВАЙ ПРОВЕРИМ</a>
+      </section>
+      <section class="services" id="services">
+        <div class="card card1">
+          <img src="img/card1.svg" alt="">
+          <p class="text record-number">01</p>
+          <h2 class="text record-title">ЗАПИСЬ</h2>
+          <p class="text record-info">MIC / 01 / TRAPTOAD STUDIO</p>
+          <p class="text record-note">Голос. Подача. Характер.</p>
+        </div>
+        <div class="card card2" tabindex="0">
+          <img src="img/card2.svg" alt="">
+          <p class="text mix-number">02</p>
+          <p class="text mix-title">СВЕДЕНИЕ</p>
+        </div>
+        <div class="card card3" tabindex="0">
+          <img src="img/card3.svg" alt="">
+          <p class="text master-number">03</p>
+          <p class="text master-title">МАСТЕРИНГ</p>
+        </div>
+        <div class="card card4" tabindex="0">
+          <img src="img/card4.svg" alt="">
+          <p class="text beat-number">04</p>
+          <p class="text beat-title">БИТЫ</p>
+        </div>
+        <img class="art" src="img/services.svg" alt="" aria-hidden="true">
+        <p class="text services-number">04/ СОБЕРЁМ ТВОЙ ТРЕК</p>
+        <p class="text services-info">ВЫДВИНИ СВОЙ ЗВУК →</p>
+        <p class="text services-note">Выбери услугу — добавим её в язык.</p>
+        <a class="text brief" href="#sound">ПЕРЕЙТИ К БРИФУ</a>
+      </section>
+      <section class="works" id="works">
+        <img class="art" src="img/works.svg" alt="" aria-hidden="true">
+        <h2 class="text works-title">ПОПАДИ<br>В СВОЮ</h2>
+        <p class="text wave-title">ВОЛНУ.</p>
+        <a class="work-link" href="img/pic5.png" aria-label="Открыть коллаж работ"></a>
+      </section>
+      <section class="last" id="last">
+        <img class="art" src="img/last.svg" alt="" aria-hidden="true">
+        <h2 class="text last-title">НА ПОЛНУЮ<br>НАСЫЩЕННОСТЬ</h2>
+      </section>
+      <footer class="footer" id="footer">
+        <img class="art" src="img/footer.svg" alt="" aria-hidden="true">
+        <a class="text footer-name" href="#top">TRAPTOAD + Styrene A Web</a>
+        <p class="text footer-note">СВОЙ ШРИФТ. СВОЙ ГОЛОС.<br>КАЖДАЯ ДЕТАЛЬ.</p>
+        <a class="text footer-link" href="#sound">давай обсудим? — квак</a>
+      </footer>
     </main>
-
-    <footer>
-        TRAPTOAD® / СВОЙ ГОЛОС. СВОЯ СРЕДА.
-    </footer>
-</body>
+  </body>
 </html>
